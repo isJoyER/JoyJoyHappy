@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joy's Portfolio - Advanced 3D Modeler">
+    <meta name="description" content="Joy's Advanced Portfolio - 3D Modeler with Artistic Touch">
     <title>Joy's Portfolio</title>
     <style>
         /* 基本样式 */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e1e;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #f5f5f5;
         }
 
         header {
-            background-color: #212121;
+            background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
-            font-size: 2.5em;
-            font-weight: bold;
+            font-size: 3em;
+            font-weight: 700;
             margin: 0;
         }
 
@@ -33,27 +34,40 @@
         }
 
         nav a {
-            color: #fff;
+            color: #f5f5f5;
             margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
         }
 
-        /* 艺术风格背景和整体设计 */
+        nav a:hover {
+            color: #ffab40;
+        }
+
         .art-background {
-            background: url('your-artistic-background-image.jpg') no-repeat center center/cover;
-            height: 400px;
+            background: url('your-updated-artistic-image.jpg') no-repeat center center/cover;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .art-background h2 {
             color: #fff;
-            font-size: 3em;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
-            border-radius: 10px;
+            font-size: 4em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .section {
@@ -63,15 +77,15 @@
         }
 
         h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #333;
+            font-size: 2.5em;
+            border-bottom: 2px solid #ffab40;
             padding-bottom: 10px;
             margin-bottom: 40px;
         }
 
         .about-me {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1.3em;
+            line-height: 1.8;
         }
 
         .projects {
@@ -81,52 +95,59 @@
         }
 
         .project-item {
-            background-color: #fff;
-            border-radius: 10px;
+            background-color: #262626;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease;
         }
 
         .project-item:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
         }
 
         .project-image {
             width: 100%;
-            height: 200px;
+            height: 220px;
             background-size: cover;
             background-position: center;
         }
 
         .project-info {
             padding: 20px;
+            font-size: 1.2em;
         }
 
         .contact-info {
             text-align: center;
+            margin-top: 50px;
         }
 
         .social-links a {
-            color: #333;
-            font-size: 2em;
-            margin: 0 10px;
+            color: #ffab40;
+            font-size: 2.5em;
+            margin: 0 15px;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #212121;
+            padding: 30px;
+            background-color: #333;
             color: #fff;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-    <!-- 页眉 -->
     <header>
-        <h1>Joy's Art World</h1>
+        <h1>Joy's Creative Space</h1>
         <nav>
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
@@ -134,57 +155,52 @@
         </nav>
     </header>
 
-    <!-- 艺术背景 -->
     <div class="art-background">
-        <h2>Welcome to My Creative Space</h2>
+        <h2>Discover My Art</h2>
     </div>
 
-    <!-- 关于我 -->
     <section id="about" class="section">
         <h2>About Me</h2>
         <p class="about-me">
-            Hello! I'm Joy, an advanced 3D modeler with a passion for creativity. I enjoy creating digital art, 
-            listening to music, playing games, and watching short series. With a deep understanding of the latest 
-            3D modeling techniques and tools, I strive to bring artistic visions to life through my work.
+            Hi, I'm Joy, a senior 3D modeler passionate about music, games, and short series. I blend my love for art 
+            with technical precision, creating stunning 3D worlds and characters. Welcome to my portfolio!
         </p>
     </section>
 
-    <!-- 项目展示 -->
     <section id="projects" class="section">
         <h2>Projects</h2>
         <div class="projects">
-            <!-- 项目 1 -->
             <div class="project-item">
-                <div class="project-image" style="background-image: url('your-project-image1.jpg');"></div>
+                <div class="project-image" style="background-image: url('project1.jpg');"></div>
                 <div class="project-info">
-                    <h3>3D Fantasy World</h3>
-                    <p>A project that explores the realms of fantasy with highly detailed character models and environments.</p>
+                    <h3>Fantasy Character Design</h3>
+                    <p>A whimsical exploration of fantasy characters, bringing life to their detailed features and stories.</p>
                 </div>
             </div>
-            <!-- 项目 2 -->
+
             <div class="project-item">
-                <div class="project-image" style="background-image: url('your-project-image2.jpg');"></div>
+                <div class="project-image" style="background-image: url('project2.jpg');"></div>
                 <div class="project-info">
+                    <h3>Cyberpunk City
                     <h3>Cyberpunk Cityscape</h3>
-                    <p>An immersive urban environment set in a futuristic, neon-lit world.</p>
+                    <p>An immersive futuristic cityscape full of neon lights, towering skyscrapers, and intricate details.</p>
                 </div>
             </div>
-            <!-- 项目 3 -->
+
             <div class="project-item">
-                <div class="project-image" style="background-image: url('your-project-image3.jpg');"></div>
+                <div class="project-image" style="background-image: url('project3.jpg');"></div>
                 <div class="project-info">
-                    <h3>Character Sculpting</h3>
-                    <p>Showcasing my character sculpting skills with realistic and stylized figures.</p>
+                    <h3>Realistic Character Sculpt</h3>
+                    <p>A showcase of my skills in sculpting hyper-realistic characters, focusing on anatomy and facial expressions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 联系信息 -->
     <section id="contact" class="section">
         <h2>Contact Me</h2>
         <div class="contact-info">
-            <p>Feel free to reach out to me on social media or via email:</p>
+            <p>I'd love to connect! You can find me on social media or drop me an email:</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/joy" target="_blank">LinkedIn</a>
                 <a href="https://www.twitter.com/joy" target="_blank">Twitter</a>
@@ -193,7 +209,6 @@
         </div>
     </section>
 
-    <!-- 页脚 -->
     <footer>
         <p>&copy; 2024 Joy's Portfolio | All Rights Reserved</p>
     </footer>
